@@ -1,0 +1,16 @@
+// Functions
+
+@function breakpoints($bp){
+    @if $bp == small {
+        @return map-get($map: $breakpoints, $key: small);
+    } @else if $bp == medium {
+        @return map-get($map: $breakpoints, $key: medium);
+    } @else if $bp == large {
+        @return map-get($map: $breakpoints, $key: large);
+    } @else if $bp == x-large {
+        @return map-get($map: $breakpoints, $key: x-large);
+    } @else if $bp == xx-large {
+        @return map-get($map: $breakpoints, $key: xx-large);
+    }
+}
+

@@ -1,0 +1,20 @@
+//Mixins
+
+
+
+// Media queries
+@mixin bp($point) {
+    @if $point == small {
+      @media only screen and (min-width: breakpoints($point)) { @content; }
+    } @else if $point == medium {
+        @media only screen and (min-width: breakpoints($point)) { @content; }
+    } @else if $point == large {
+        @media only screen and (min-width: breakpoints($point)) { @content; }
+    } @else if $point == x-large {
+        @media only screen and (min-width: breakpoints($point)) { @content; }
+    } @else if $point == xx-large {
+        @media only screen and (min-width: breakpoints($point)) { @content; }
+    }
+}
+
+
