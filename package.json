@@ -1,5 +1,5 @@
 {
-  "name": "webpack-project-template",
+  "name": "roadtrip",
   "version": "1.0.0",
   "description": "This is a shell of a project with HTML, JS and SASS in webpack",
   "main": "index.js",
