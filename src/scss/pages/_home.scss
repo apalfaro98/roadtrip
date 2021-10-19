@@ -16,7 +16,7 @@ a{
 
 h1{
     font-size: 4rem;
-    font-family: 'AndadaPro';  
+    font-family: 'AndadaPro';
 }
 
 h2{
@@ -145,6 +145,7 @@ h2{
 
 .bg-img{
     &#banner{
+        animation: background 1s ease-in;
         @include parallax($bg-img1);   
     }
     &#one{
