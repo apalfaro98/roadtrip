@@ -1,6 +1,7 @@
 // Variables
 
 /* Typography */
+$body-font: 'Montserrat', sans-serif;
 
 /* Breakpoints */
 $breakpoints: (
@@ -12,8 +13,20 @@ $breakpoints: (
 );
 
 /* Paths */
+$font-regular-url: url(../assets/fonts/Montserrat-Regular.ttf);
+$font-bold-url: url(../assets/fonts/Montserrat-Bold.ttf);
+$font-light-url: url(../assets/fonts/Montserrat-Light.ttf);
+$font-title-url: url(../assets/fonts/AndadaPro-Regular.ttf);
+
+$bg-img1: url(../assets/images/banner.jpg);
+$bg-img2: url(../assets/images/banner2.jpg);
+$bg-img3: url(../assets/images/banner3.jpg);
+
 /* Grid setup */
 /* Colour palette */
+$color-primary: #e7942d;
+$color-secondary: #e6b87f;
+$color-gray: rgba(24, 24, 24, 0.801);
 $black: #000;
 $white: #fff;
 

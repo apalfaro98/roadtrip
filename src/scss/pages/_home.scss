@@ -1,2 +1,246 @@
 // Styles that are specific to the home page.
 
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: $body-font;
+    color: $white;
+    line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+a{
+    color: $white;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: 'AndadaPro';  
+}
+
+h2{
+    font-family: 'AndadaPro';  
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header__content{
+    @include d-flex(space-between);
+
+    width: 90vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.links{
+    @include d-flex(space-between);
+    width: 250px;
+}
+
+.bg-img{
+    &#banner{
+        @include parallax($bg-img1);   
+    }
+    &#one{
+        @include parallax($bg-img2);   
+    }
+}
+
+.inner{
+    @include d-flex(center);
+    height: 100vh;
+}
+
+.title{
+    width: 500px;
+    text-align: center;  
+}
+
+.box{
+    width: 90vw;
+    max-width: 600px;
+    padding: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    border-radius: 1rem;
+
+    text-align: center;
+}
+
+.about__content{
+    margin-top: 1rem; 
+}
+
+.blog{
+    padding-top: 5rem;
+    @include d-flex(space-between);
+    align-items: flex-start;
+}
+
+.blog__left{
+    flex-basis: calc(50% - 2rem);
+}
+
+.blog__image{
+    flex-basis: calc(50% - 2rem);
+}
+
+.blog__title{
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.blog__content{
+    color: $color-gray;
+}
+
+.articles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 2rem;
+
+    padding-top: 2rem;
+}
+
+.article{
+
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    transition: transform .3s ease-in-out;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    &::before{
+        content: '';
+
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5));
+    }
+
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+}
+
+.article--center{
+    @include d-flex(center);
+    align-items: flex-end;
+    
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.article__content{
+    width: 60%;
+    padding-bottom: 2rem;
+
+    h3{
+        font-size: 1.6rem;
+        font-family: 'AndadaPro';
+        line-height: 1.2;
+        color: $color-primary;
+    }
+    p{
+        font-size: .7rem;
+        font-weight: 400;
+    }
+
+}
+
+
+.one{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+}
+
+.two{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+}
+
+.three{
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    
+
+}
+
+.four{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    
+}
+
+.five{
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+
+}
+
+.six{
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+}
+
+.footer{
+    background-color: $color-secondary;
+    margin-top: 3rem;
+    padding: 2rem;
+    @include d-flex(center)
+}
+
+.icons{
+    width: 40vw;
+    @include d-flex(space-around);
+    text-align: center;
+    
+    img{
+        width: 30px;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

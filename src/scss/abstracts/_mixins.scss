@@ -17,4 +17,19 @@
     }
 }
 
+@mixin d-flex($justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin parallax($image-url){
+
+    height: 100vh;
+    background: linear-gradient(to left, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), $image-url;
+    background-position: center center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
 

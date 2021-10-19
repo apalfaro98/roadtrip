@@ -2,4 +2,22 @@
 
 .container {
   margin: 0 auto;
+  width: 90vw;
+  max-width: 900px;
 }
+
+.here{
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    left: 35%;
+    bottom: -5px;
+    height: 2px;
+    width: 30%;
+    border-bottom: 3px solid $color-primary;
+    border-radius: 2rem;
+  }
+}
+

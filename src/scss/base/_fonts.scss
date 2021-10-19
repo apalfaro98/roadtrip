@@ -1,1 +1,19 @@
 // @font-face declarations, if any.
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: $font-regular-url;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: $font-bold-url;
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: 'AndadaPro', sans-serif;
+    src: $font-title-url;
+}
