@@ -10,62 +10,74 @@
 
 <body>
     <!-- Header -->
-			<header id="header" class="header">
-                <div class="header__content">
-                    <div class="logo"><a href="#banner">Travigo</a></div>
-                    <!-- Nav -->
-                    <nav id="menu">
-                        <ul class="links">
-                            <li class="here"><a href="#banner">Home</a></li>
-                            <li><a href="#one">About Us</a></li>
-                            <li><a href="#two">Blog</a></li>
-                        </ul>
-                    </nav>
-                </div>
-				
-			</header>
+    <header id="header" class="header">
+        <div class="header__content">
+            <div class="nav__open logo"><a href="#banner">Travigo</a></div>
+            <!-- Nav -->
+            <nav id="menu" class="menu">
+                <ul class="links">
+                    <li class="here"><a href="#banner">Home</a></li>
+                    <li><a href="#one">About Us</a></li>
+                    <li><a href="#two">Blog</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile nav -->
+            <button class="nav__toggle">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="modal-nav">
+                <ul class="modal__links">
+                    <li class="here"><a href="#banner">Home</a></li>
+                    <li><a href="#one">About Us</a></li>
+                    <li><a href="#two">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
 
 
     <!-- Banner -->
-        <section id="banner" class="bg-img" data-bg="banner.jpg">
-            <div class="inner">
-                <header class="title">
-                    <h1>It's a Big World Out There, Go Explore.</h1>
-                </header>
-            </div>
-            <a href="#one" class="more">Flecha</a>
-        </section>
+    <section id="banner" class="bg-img" data-bg="banner.jpg">
+        <div class="inner">
+            <header class="title">
+                <h1>It's a Big World Out There, Go Explore.</h1>
+            </header>
+        </div>
+        <a href="#one" class="more">Flecha</a>
+    </section>
 
     <!-- One -->
-        <section id="one" class="about bg-img">
-            <div class="inner">
-                <article class="box">
-                    <header>
-                        <h2>About Us</h2>
-                    </header>
-                    <div class="about__content">
-                        <p>Our agency was established in 2020 and is headquartered in Alexandria - Egypt, the company aims to organize trips around the world and provide prices and offers that suits our customers. All our goal is the customer comfort, reassurance, and non-concern about matters of organizing the trip, so the customer has to just enjoy.</p>
-                    </div>
-                </article>
-            </div>
-            <a href="#two" class="more">flecha</a>
-        </section>
+    <section id="one" class="about bg-img">
+        <div class="inner">
+            <article class="box">
+                <header>
+                    <h2>About Us</h2>
+                </header>
+                <div class="about__content">
+                    <p>Our agency was established in 2020 and is headquartered in Alexandria - Egypt, the company aims to organize trips around the world and provide prices and offers that suits our customers. All our goal is the customer comfort, reassurance, and non-concern about matters of organizing the trip, so the customer has to just enjoy.</p>
+                </div>
+            </article>
+        </div>
+        <a href="#two" class="more">flecha</a>
+    </section>
 
     <!-- Two -->
-        <section id="two" class="bg-img container">
-            <div class="blog">
-                <div class="blog__left">
-                    <h2 class="blog__title">Blog</h2>
-                    <p class="blog__content">Create a profile and get the use of all benefits of our blog. Stay tunned with fresh news and travel tips. Share your own experience and find inspiration with beautiful photos and catchy stories about road journeys.</p>
-                </div>
-                <div class="blog__image">
-                    <img src="./assets/images/undraw_Publish_article_re_3x8h.svg" alt="Image of a person publishing an article">
-                </div>
+    <section id="two" class="bg-img container">
+        <div class="blog">
+            <div class="blog__left">
+                <h2 class="blog__title">Blog</h2>
+                <p class="blog__content">Create a profile and get the use of all benefits of our blog. Stay tunned with fresh news and travel tips. Share your own experience and find inspiration with beautiful photos and catchy stories about road journeys.</p>
             </div>
+            <div class="blog__image">
+                <img src="./assets/images/undraw_Publish_article_re_3x8h.svg" alt="Image of a person publishing an article">
+            </div>
+        </div>
+        <div class="articles--center">
             <div class="articles">
                 
                 <div class="article one">
-                    <img src="./assets/images/banner3.jpg" alt="one" loading="lazy">
+                    <img src="./assets/images/banner3.jpg" alt="one">
                     <div class="article--center">
 
                         <div class="article__content">
@@ -75,7 +87,7 @@
                     </div>
                 </div>
                 <div class="article two">
-                    <img src="./assets/images/banner4.jpg" alt="two" loading="lazy">
+                    <img src="./assets/images/banner4.jpg" alt="two">
                     <div class="article--center">
 
                         <div class="article__content">
@@ -87,7 +99,7 @@
                 
 
                 <div class="article three">
-                    <img src="./assets/images/banner5.jpg" alt="three" loading="lazy">
+                    <img src="./assets/images/banner5.jpg" alt="three">
                     <div class="article--center">
 
                         <div class="article__content">
@@ -100,7 +112,7 @@
 
 
                 <div class="article four">
-                    <img src="./assets/images/banner6.jpg" alt="four" loading="lazy">
+                    <img src="./assets/images/banner6.jpg" alt="four">
                     <div class="article--center">
 
                         <div class="article__content">
@@ -112,7 +124,7 @@
                 
 
                 <div class="article five">
-                    <img src="./assets/images/banner7.jpg" alt="five" loading="lazy">
+                    <img src="./assets/images/banner7.jpg" alt="five">
                     <div class="article--center">
 
                         <div class="article__content">
@@ -124,7 +136,7 @@
                         
                 
                 <div class="article six">
-                    <img src="./assets/images/banner8.jpg" alt="six" loading="lazy">
+                    <img src="./assets/images/banner8.jpg" alt="six">
                     <div class="article--center">
 
                         <div class="article__content">
@@ -135,18 +147,19 @@
 
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer" class="footer">
-				<div>
-					<ul class="icons">
-						<li><a href="#"><img src="./assets/images/twitter.png" alt="twitter"></a></li>
-						<li><a href="#"><img src="./assets/images/facebook.png" alt="facebook"></a></li>
-						<li><a href="#"><img src="./assets/images/instagram.png" alt="instagram"></a></li>
-					</ul>
-				</div>
-			</footer>
+    <!-- Footer -->
+        <footer id="footer" class="footer">
+            <div>
+                <ul class="icons">
+                    <li><a href="#"><img src="./assets/images/twitter.png" alt="twitter"></a></li>
+                    <li><a href="#"><img src="./assets/images/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#"><img src="./assets/images/instagram.png" alt="instagram"></a></li>
+                </ul>
+            </div>
+        </footer>
 
 </body>
 
